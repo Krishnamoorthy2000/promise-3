@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Fox Image</title>
+    <style>
+      /* Style the body */
+      body {
+        background-color: #f8f8f8;
+        font-family: Arial, sans-serif;
+      }
+      
+      /* Style the header */
+      header {
+        background-color: #f44336;
+        color: white;
+        padding: 16px;
+        text-align: center;
+      }
+      
+      /* Style the main content */
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 16px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+      
+      /* Style the form */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+      
+      label {
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      
+      input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+      }
+      
+      /* Style the image container */
+      #image-container {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      
+      /* Style the image */
+      #fox-image {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Random Fox Image</h1>
+    </header>
+    <main>
+      <form>
+        <label for="number-input">Enter a number between 0 and 999:</label>
+        <input type="number" id="number-input" name="number" min="0" max="999">
+        <button type="submit">Submit</button>
+      </form>
+      <div id="image-container"></div>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
